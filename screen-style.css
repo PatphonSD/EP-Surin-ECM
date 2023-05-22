@@ -1,0 +1,236 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+/* ตาราง */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* ส่วนหัวของตาราง */
+thead {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+/* แถวของตาราง */
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* เซลล์ของตาราง */
+td, th {
+  padding: 10px 20px;
+}
+
+/* เซลล์ของตารางที่เป็นส่วนหัว */
+th {
+  text-align: left;
+}
+
+#rcorners1 {
+  font-size: 30px;
+}
+
+/* ขนาดของตารางเมื่อแสดงผลในหน้าจอแนวตั้ง */
+@media (max-width: 768px) {
+  /* แสดงผลเป็นแถวยาวลงมาข้างล่าง */
+  table {
+    display: block;
+    width: 100%;
+  }
+  tbody, thead {
+    display: block;
+  }
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: none;
+    padding: 10px 0;
+  }
+  td, th {
+    flex-basis: 100%;
+    padding: 5px;
+    text-align: left;
+    font-size: 18px;
+  }
+  #head-text {
+    display: none;
+  }
+  #rcorners1 {
+    font-size: 21px;
+    text-align: center;
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 10px;
+  }
+  .tr-text {
+    font-size: 18px;
+    width: 20px;
+  }
+  button {
+    color: #292929;
+    background-color: #DC5F00;
+    border-radius: 5px;
+    border: 0.5px;
+    padding: 4px;
+    padding-inline: 10px;
+  }
+
+  input {
+    width: 100%;
+    margin: 0 auto; /* กำหนด margin ด้านซ้ายและขวาเป็น auto เพื่อให้ input อยู่ตรงกลาง */
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 18px;
+    border: 0.1;
+    border-style: solid;
+    box-shadow: 1px 1px 1px rgba(66, 66, 66, 0.4);
+  }
+
+  .button2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #CF0A0A;
+    border-radius: 5px;
+    border: 0;
+    padding:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(66, 66, 66, 0.4);
+    font-weight: bold;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .button1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #CF0A0A;
+    border-radius: 5px;
+    border: 0;
+    padding:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(66, 66, 66, 0.4);
+    font-weight: bold;
+    width: 100%;
+    font-size: 16px;
+  }
+
+}
+
+input  {
+  width: 100%; /* กำหนดความกว้างของ input */
+  margin: 0 auto; /* กำหนด margin ด้านซ้ายและขวาเป็น auto เพื่อให้ input อยู่ตรงกลาง */
+  box-shadow: 1px 1px 1px rgba(66, 66, 66, 0.4);
+}
+
+select {
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-inline: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 1px 1px 1px rgba(66, 66, 66, 0.4);
+  font-size: 20px;
+}
+
+table.table {
+  padding: 5px;
+  box-shadow: 1px 1px 1px rgba(66, 66, 66, 0.4);
+}
+
+tr {
+  width: 100%;
+  border: 10px;
+}
+
+.find {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #cf590a;
+  border-radius: 5px;
+  border: 0;
+  padding:10px;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px rgba(66, 66, 66, 0.4);
+  font-weight: bold;
+}
+
+.button2:hover {
+  background-color: #109780;
+}
+
+.button1:hover {
+  background-color: #109780;
+}
+
+.button2:checked {
+  background-color: #ce5403;
+}
+
+.button1:checked {
+  background-color: #ce5403;
+}
+
+button.clicked {
+  background-color: #a300de;
+  color: #ffffff;
+}
+
+td {
+  text-align: center;
+}
+
+tr {
+  background-color: #efefef;
+}
+
+
+@media (min-width: 768px) {
+
+  #rcorners1 {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  button.button2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #cf590a;
+    border-radius: 5px;
+    border: 0;
+    padding:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(66, 66, 66, 0.4);
+    width: 100%;
+    font-size: 14px;
+  }
+  button.button1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #cf590a;
+    border-radius: 5px;
+    border: 0;
+    padding:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(66, 66, 66, 0.4);
+    width: 100%;
+    font-size: 14px;
+  }
+}

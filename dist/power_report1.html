@@ -1,0 +1,188 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="screen-style.css">
+  <title>smart meter</title>
+  <META HTTP-EQUIV="Refresh"  CONTENT="60">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<p id="rcorners1">รายงานการใช้พลังงานไฟฟ้า&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+<form method="get" action="http://ep-surin.net/smart_meter/screen.php">
+	<input type="hidden" name="action" value="report1">
+	<input type="hidden" name="action2" value="report">
+
+<table class="table" >
+<tbody >
+  
+<tr class="report_margin">
+	<td class="tr-text">วันที่ : </td>
+	<td><input type="date" name="st_date" value="2023-01-01"></td>
+	<td class="tr-text" >ถึง : </td>
+	<td><input type="date" name="en_date" value="2023-02-01"></td>
+  <td class="tr-text">Meter :</td>
+	
+  <td width="">
+		<select name="meter" required="">
+			<option value="All">All
+			</option><option value="meter1">meter1
+			</option><option value="meter2">meter2
+			</option><option value="meter3">meter3
+			</option><option value="meter4">meter4
+			</option><option value="meter5">meter5
+			</option><option value="meter6">meter6
+			</option><option value="meter7">meter7
+			</option><option value="meter8">meter8
+			</option><option value="meter9">meter9	
+			</option><option value="meter10">meter10	
+	  	</option>
+    </select>
+    <td colspan="0">
+			<input class="find" type="submit" value="ค้นหา">
+	</td>
+	</td>
+
+
+</tr>
+
+<tr class="trmeter">
+	
+	
+</tr>
+
+</tbody></table>
+</form>
+
+
+
+
+
+
+
+	<table class="blueTable">
+	<thead>
+		<tr>
+			<th id="head-text">Meter</th>
+			<th id="head-text">จำนวนข้อมูล</th>
+			<th id="head-text">กำลังไฟฟ้าสะสม(W)</th>
+			<th id="head-text">พลังงานไฟฟ้าที่ใช้(Wh)</th>
+			<th id="head-text">จำนวนหน่วย(Unit)</th>
+			<th id="head-text">จำนวนเงิน(บาท)</th>
+			<th id="head-text">ชื่อลูกค้า</th>
+			<th id="head-text">ส่งข้อมูล</th>
+		</tr>
+	</thead>
+
+	
+																																
+
+	<tbody>
+  
+  <tr>
+			<td>meter10</td>
+			<td>
+					1						
+			</td>
+
+			<td>
+					0.00			</td>
+
+      <td>         	 
+         	 0.00      </td>
+			<td>		
+					0.0000			
+			</td>
+
+			
+			<td>0.00</td>
+			<td>
+											
+			</td>
+			<td align="center">
+				<a href="screen.php?action=report1&amp;action2=report&amp;action3=sendline&amp;st_date=2023-02-01&amp;en_date=2023-02-02&amp;meter=All&amp;meterX=meter10&amp;amount=0.00&amp;unit=0.0000"><button class="button button2">ส่ง</button></a>
+			</td>
+			
+	</tr>
+  <tr>
+    <td>meter10</td>
+    <td>
+        1						
+    </td>
+
+    <td>
+        0.00			</td>
+
+    <td>         	 
+          0.00      </td>
+    <td>		
+        0.0000			
+    </td>
+
+    
+    <td>0.00</td>
+    <td>
+                    
+    </td>
+    <td align="center">
+      <a href="screen.php?action=report1&amp;action2=report&amp;action3=sendline&amp;st_date=2023-02-01&amp;en_date=2023-02-02&amp;meter=All&amp;meterX=meter10&amp;amount=0.00&amp;unit=0.0000"><button class="button button2">ส่ง</button></a>
+    </td>
+    
+  </tr>
+  <tr>
+  <td>meter10</td>
+  <td>
+      1						
+  </td>
+
+  <td>
+      0.00			</td>
+
+  <td>         	 
+        0.00      </td>
+  <td>		
+      0.0000			
+  </td>
+
+  
+  <td>0.00</td>
+  <td>
+                  
+  </td>
+  <td align="center">
+    <a href="screen.php?action=report1&amp;action2=report&amp;action3=sendline&amp;st_date=2023-02-01&amp;en_date=2023-02-02&amp;meter=All&amp;meterX=meter10&amp;amount=0.00&amp;unit=0.0000"><button class="button button2">ส่ง</button></a>
+  </td>
+  
+  </tr>
+  <tr>
+		<td colspan="20" align="center"> 
+				++ไม่พบข้อมูล++
+		</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="6"></td>
+		<td align="center">
+				
+						<a href="screen.php?action=report1&amp;action2=report&amp;action3=sendAll&amp;st_date=2023-01-01&amp;en_date=2023-02-01&amp;meter=All&amp;data=data@999">
+							<button class="button1">ส่งทั้งหมด</button>
+						</a>	
+		</td>
+	</tr>
+
+</tbody></table>
+
+
+
+
+
+
+</body>
+</html>

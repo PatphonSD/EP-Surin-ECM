@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="screen-style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+
+        
+        
+        <p id="rcorners1">รายงานการส่งข้อมูล</p>
+        
+        
+        <form method="post" action="screen.php">
+            <input type="hidden" name="action" value="data1">
+            <input type="hidden" name="action2" value="report">
+        
+        <table class="table">
+        <tbody>
+            <tr>
+            <td class="tr-text">วันที่ :</td>
+            <td><input type="date" name="st_date" value="2023-01-01"></td>
+            <td class="tr-text">ถึง :</td>
+            <td><input type="date" name="en_date" value="2023-02-03"></td>
+            <td class="tr-text">Meter :</td>
+            <td>
+                <select name="meter" required="">
+                            <option value="meter3" selected="">meter3						
+                    </option><option value="">--Select--
+                    </option><option value="meter1">meter1
+                    </option><option value="meter2">meter2
+                    </option><option value="meter3">meter3
+                    </option><option value="meter4">meter4
+                    </option><option value="meter5">meter5
+                    </option><option value="meter6">meter6
+                    </option><option value="meter7">meter7
+                    </option><option value="meter8">meter8			
+                    </option><option value="meter9">meter9	
+                    </option><option value="meter10">meter10					
+                    </option>
+                </select>
+                <td>
+                <input class="find" type="submit" value="ค้นหา">
+                </td>
+            </td>
+           
+        </tbody></table>
+        </form>
+        
+        
+        
+        
+            
+            <table class="blueTable">
+            <thead>
+                <tr>
+                    <th id="head-text">No.</th>
+                    <th id="head-text">Meter</th>
+                    <th id="head-text">วัน-เดือน-ปี</th>
+                    <th id="head-text">เวลา</th>
+                    <th id="head-text">แรงดันไฟฟ้า(V)</th>
+                    <th id="head-text">กระแสไฟฟ้า(A)</th>
+                    <th id="head-text">กำลังไฟฟ้า(W)</th>
+                    <th id="head-text">พลังงานไฟฟ้า(kWh)</th>
+                    <th id="head-text">ความถี่(Hz)</th>
+                    <th id="head-text">Power factor(pf)</th>
+                </tr>
+            </thead>
+            </table>
+        
+        
+        
+        
+        </body>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?
+// ติดต่อฐานข้อมูล
+function connect_db( ){ 
+	  $link = mysqli_connect("localhost" ,"electri3_test", "testANDtest" , "electri3_test" );  //ที่ SERVER
+	  //$link = mysqli_connect("127.0.0.1" ,"root", "testANDtest" , "electri3_test" );  //เครื่อง
+	if($link == false  ){
+		die(' error connect database ');
+	}else{
+		mysqli_query($link , "set names utf8");
+		return $dblink;
+		
+	}
+}
+
+	$db = "electri3_test";
+?>
+<? //mysqli_close($dblink);?>
+
